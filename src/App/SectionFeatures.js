@@ -46,7 +46,7 @@ const featuresListData = [
 
 function SectionFeatures() {
   return (
-    <section className="section-features">
+    <section className="section-features" id="feature">
       <h2 className="heading-secondary u-margin-bottom ">Our Features</h2>
       <FeaturesList />
       {/* <ReactSVG src="../icon/stack.svg"/> */}

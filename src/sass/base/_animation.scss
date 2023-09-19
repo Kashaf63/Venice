@@ -1,0 +1,14 @@
+@keyframes primaryHeading {
+    0% {
+        transform: translateX(16rem);
+        opacity: 0;
+    }
+    85%{
+        transform: translateX(-5rem);
+    }
+    100% {
+        transform: translateX(0rem);
+        opacity: 1;
+    }
+}
+

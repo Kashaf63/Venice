@@ -37,7 +37,7 @@ const howitworkListData = [
 
 function SectionHowItWorks() {
   return (
-    <section className="section-howItWorks">
+    <section className="section-howItWorks" id="howItWorks">
       <div className="grid grid_2col section-howItWorks__grid">
         <div className="section-howItWorks__grid-1col">
           <img

@@ -91,7 +91,7 @@ export default function SectionTestimonials() {
   };
 
   return (
-    <section className="section-testimonials">
+    <section className="section-testimonials" id="testimonial">
       <h2 className="heading-secondary">We make people genuinely happy </h2>
       <p className="paragraph-medium">
         Don't just take our word for it. Hear directly from travelers who have

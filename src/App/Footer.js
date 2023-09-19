@@ -1,6 +1,7 @@
 import facebookSvg from "../icon/facebook.svg";
 import instagramSvg from "../icon/instagram.svg";
 import youtubeSvg from "../icon/youtube.svg";
+import Logo from "../icon/Logo.svg";
 
 const footerListData = [
   {
@@ -70,14 +71,27 @@ function Newslatter() {
         us.
       </p>
       <form className="footer_form">
-        <input type="email" className="footer_from-input" placeholder="Please write your email"/>
+        <input
+          type="email"
+          className="footer_from-input"
+          placeholder="Please write your email"
+        />
         <button className="footer_from-inputBtn">Submit</button>
       </form>
       <div className="footer_social-mediaLinks">
-        <a href="#"><img src={facebookSvg} alt="facebook-icon" /></a>
-        <a href="#"><img src={instagramSvg} alt="instagram-icon" /></a> 
-        <a href="#"><img src={youtubeSvg} alt="youtube-icon" /></a>
+        <a href="#">
+          <img src={facebookSvg} alt="facebook-icon" />
+        </a>
+        <a href="#">
+          <img src={instagramSvg} alt="instagram-icon" />
+        </a>
+        <a href="#">
+          <img src={youtubeSvg} alt="youtube-icon" />
+        </a>
       </div>
+      <a href="#">
+        <img src={Logo} alt="logo" className="footer_logo" />
+      </a>
     </>
   );
 }

@@ -11,6 +11,7 @@
 button {
   border: none;
   background-color: inherit;
+  cursor: pointer;
 }
 ul {
   padding: 0;
@@ -90,10 +91,17 @@ body {
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
-
-button {
-  cursor: pointer;
+.logo {
+  height: $hamburger_manu-height;
+  position: absolute;
+  top: 4%;
+  left: 2%;
+}
+.footer_logo {
+  height: $hamburger_manu-height;
+  margin: 0 auto;
 }
 // html {
 //   @include responsive(big-tab) {

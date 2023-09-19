@@ -1,9 +1,11 @@
 import Navigation from "./Navigation";
-import rswipingIcon from "../icon/rswiper.svg";
-import lswipingIcon from "../icon/lswiper.svg";
+// import rswipingIcon from "../icon/rswiper.svg";
+// import lswipingIcon from "../icon/lswiper.svg";
 import bgimg1 from "../image/head_img.png";
 import bgimg2 from "../image/header_img2.jpg";
 import bgimg3 from "../image/header_img.png";
+// import Logo from "../icon/logo.svg"
+import Logo from "../icon/Logo.svg";
 import { useState } from "react";
 
 const imgList = [
@@ -34,7 +36,12 @@ function Header() {
     <header
       className={bgImg && "header headeBgImgani"}
       style={{ backgroundImage: `url(${spread})` }}
+      id="home"
     >
+      <a href="#home">
+        {" "}
+        <img src={Logo} alt="logo" className="logo" />{" "}
+      </a>
       <Navigation />
       <div className="header_wrapper">
         <p className="header-paragraph">Discover the world with</p>
@@ -45,16 +52,16 @@ function Header() {
           where your wanderlust can be transformed into memorable journeys.
         </p>
         <div className="header_btns">
-          <a href="#" className="header_btns--btn header-paragraph">
+          <a href="#booking" className="header_btns--btn header-paragraph">
             Book Now!
           </a>
-          <a href="#" className="header_btns--btn header-paragraph">
+          <a href="#service" className="header_btns--btn header-paragraph">
             Learn More
           </a>
         </div>
       </div>
       <div className="header_swipers-btns">
-        <button
+        {/* <button
           className="header_swipers header_swipers--lbtn"
           onClick={handleLeftSwipe}
         >
@@ -65,7 +72,7 @@ function Header() {
           onClick={handleRightSwipe}
         >
           <img src={rswipingIcon} alt="icon" />
-        </button>
+        </button> */}
       </div>
     </header>
   );

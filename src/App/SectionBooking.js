@@ -31,7 +31,7 @@ const cardListData = [
 
 export default function SectionBooking() {
   return (
-    <section className="section-booking">
+    <section className="section-booking" id={"booking"}>
       <h2 className="heading-secondary">Discover your perfect journey</h2>
       <p className="paragraph-medium">
         From thrilling expeditions to cultural escapades, find your ideal
