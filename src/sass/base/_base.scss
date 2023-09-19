@@ -93,6 +93,21 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
+html::-webkit-scrollbar {
+  background-color: rgba(128, 128, 128, 0);
+  padding-right: .5rem;
+  width: 2rem;
+}
+html::-webkit-scrollbar-thumb {
+  border-radius: 20rem;
+  border: 5px solid white;
+  background-color: gray;
+  margin-right: .3rem;
+  // margin: .3rem;
+}
+html::-webkit-scrollbar-button{
+  display: none;
+}
 .logo {
   height: $hamburger_manu-height;
   position: absolute;
@@ -103,14 +118,14 @@ html {
   height: $hamburger_manu-height;
   margin: 0 auto;
 }
-// html {
-//   @include responsive(big-tab) {
-//     font-size: 56.25%;
-//   }
-//   @include responsive(small-tab) {
-//     font-size: 50%;
-//   }
-//   @include responsive(big-desktop) {
-//     font-size: 75%;
-//   }
-// }
+html {
+  @include responsive(big-tab) {
+    font-size: 56.25%;
+  }
+  @include responsive(small-tab) {
+    font-size: 50%;
+  }
+  @include responsive(big-desktop) {
+    font-size: 75%;
+  }
+}

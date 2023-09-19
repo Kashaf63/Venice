@@ -1,7 +1,7 @@
 import Paragraph from "./Paragraph";
-import img1 from "../image/service_img.jpg";
-import img2 from "../image/service_img2.jpg";
-import img3 from "../image/service_img3.jpg";
+import img1 from "../image/service_img.webp";
+import img2 from "../image/service_img2.webp";
+import img3 from "../image/service_img3.webp";
 
 const serviceListData = [
   {

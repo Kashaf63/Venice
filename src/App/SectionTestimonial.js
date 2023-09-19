@@ -1,10 +1,10 @@
 import { useState } from "react";
-import manImg1 from "../image/man_img1.png";
-import manImg2 from "../image/man_img2.png";
-import womanImg1 from "../image/woman_img1.png";
-import womanImg2 from "../image/woman_img2.png";
-import womanImg3 from "../image/woman_img3.png";
-import womanImg4 from "../image/woman_img4.png";
+import manImg1 from "../image/man_img1.webp";
+import manImg2 from "../image/man_img2.webp";
+import womanImg1 from "../image/woman_img1.webp";
+import womanImg2 from "../image/woman_img2.webp";
+import womanImg3 from "../image/woman_img3.webp";
+import womanImg4 from "../image/woman_img4.webp";
 import rightarr from "../icon/rightarr.svg";
 import leftarr from "../icon/leftarr.svg";
 

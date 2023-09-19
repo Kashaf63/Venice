@@ -2,7 +2,7 @@ import glob from "../icon/globe.svg";
 import comment from "../icon/comment.svg";
 import lightning from "../icon/lightning.svg";
 import search from "../icon/search.svg";
-import image from "../image/howitworksimg.jpg";
+import image from "../image/howitworksimg.webp";
 import { useState } from "react";
 
 const howitworkListData = [

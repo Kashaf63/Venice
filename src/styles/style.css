@@ -95,6 +95,20 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth; }
 
+html::-webkit-scrollbar {
+  background-color: rgba(128, 128, 128, 0);
+  padding-right: .5rem;
+  width: 2rem; }
+
+html::-webkit-scrollbar-thumb {
+  border-radius: 20rem;
+  border: 5px solid white;
+  background-color: gray;
+  margin-right: .3rem; }
+
+html::-webkit-scrollbar-button {
+  display: none; }
+
 .logo {
   height: 8rem;
   position: absolute;
@@ -288,7 +302,8 @@ body {
   .section-features_wrapper {
     max-width: 130rem;
     margin: 0 auto;
-    gap: 2rem; }
+    gap: 2rem;
+    margin-top: 12rem; }
     .section-features_wrapper--list {
       padding: 4rem;
       padding-block: 8rem;
@@ -335,16 +350,16 @@ body {
         font-size: 2.8rem; }
       .section-location__gallery--img1 {
         grid-column: 1/3;
-        background-image: linear-gradient(rgba(0, 0, 0, 0) 40%, black), url(../image/gallery-img1.jpg); }
+        background-image: linear-gradient(rgba(0, 0, 0, 0) 40%, black), url(../image/gallery-img1.webp); }
       .section-location__gallery--img2 {
         grid-column: 3/6;
-        background-image: linear-gradient(rgba(0, 0, 0, 0) 40%, black), url(../image/gallery-img2.jpg); }
+        background-image: linear-gradient(rgba(0, 0, 0, 0) 40%, black), url(../image/gallery-img2.webp); }
       .section-location__gallery--img3 {
         grid-column: -6/-3;
-        background-image: linear-gradient(rgba(0, 0, 0, 0) 40%, black), url(../image/gallery-img3.jpg); }
+        background-image: linear-gradient(rgba(0, 0, 0, 0) 40%, black), url(../image/gallery-img3.webp); }
       .section-location__gallery--img4 {
         grid-column: -3/-1;
-        background-image: linear-gradient(rgba(0, 0, 0, 0) 40%, black), url(../image/gallery-img4.jpg); }
+        background-image: linear-gradient(rgba(0, 0, 0, 0) 40%, black), url(../image/gallery-img4.webp); }
 
 .section-howItWorks {
   background-image: linear-gradient(#f3f3f3, #f7f7f7);
@@ -545,7 +560,10 @@ body {
     font-weight: 600;
     color: #242424; }
   .header_wrapper {
-    padding-top: 17%; }
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%); }
   .header_swipers {
     border-radius: 100%;
     padding: 1.4rem;
@@ -652,21 +670,21 @@ body {
     width: 6rem;
     margin-bottom: -2rem; }
   .card1 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0) 40%, black), url(../image/card-img1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 40%, black), url(../image/card-img1.webp);
     background-size: cover;
     background-position: .01rem; }
     .card1:hover {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.445), black), url(../image/card-img1.jpg); }
+      background-image: linear-gradient(rgba(0, 0, 0, 0.445), black), url(../image/card-img1.webp); }
   .card2 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0) 40%, black), url(../image/card-img2.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 40%, black), url(../image/card-img2.webp);
     background-size: cover; }
     .card2:hover {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.445), black), url(../image/card-img2.jpg); }
+      background-image: linear-gradient(rgba(0, 0, 0, 0.445), black), url(../image/card-img2.webp); }
   .card3 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0) 40%, black), url(../image/card-img3.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 40%, black), url(../image/card-img3.webp);
     background-size: cover; }
     .card3:hover {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.445), black), url(../image/card-img3.jpg); }
+      background-image: linear-gradient(rgba(0, 0, 0, 0.445), black), url(../image/card-img3.webp); }
   .card__heading {
     font-size: 5rem;
     text-align: center;

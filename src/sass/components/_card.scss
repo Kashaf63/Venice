@@ -15,33 +15,33 @@
   }
 
   &1 {
-    background-image: $gallery-img-gradiant, url(../image/card-img1.jpg);
+    background-image: $gallery-img-gradiant, url(../image/card-img1.webp);
     background-size: cover;
     background-position: .01rem;
 
     &:hover {
       background-image: $darken-gradiant,
-        url(../image/card-img1.jpg);
+        url(../image/card-img1.webp);
     }
   }
 
   &2 {
-    background-image: $gallery-img-gradiant, url(../image/card-img2.jpg);
+    background-image: $gallery-img-gradiant, url(../image/card-img2.webp);
     background-size: cover;
 
     &:hover {
-      background-image: $darken-gradiant, url(../image/card-img2.jpg);
+      background-image: $darken-gradiant, url(../image/card-img2.webp);
     }
   }
 
   &3 {
-    background-image: $gallery-img-gradiant, url(../image/card-img3.jpg);
+    background-image: $gallery-img-gradiant, url(../image/card-img3.webp);
     background-size: cover;
     
 
     &:hover {
       background-image: $darken-gradiant,
-        url(../image/card-img3.jpg);
+        url(../image/card-img3.webp);
     }
   }
 

@@ -1,17 +1,12 @@
 import Navigation from "./Navigation";
-// import rswipingIcon from "../icon/rswiper.svg";
-// import lswipingIcon from "../icon/lswiper.svg";
-import bgimg1 from "../image/head_img.png";
-import bgimg2 from "../image/header_img2.jpg";
-import bgimg3 from "../image/header_img.png";
-// import Logo from "../icon/logo.svg"
+import bgimg1 from "../image/head_img.webp";
 import Logo from "../icon/Logo.svg";
 import { useState } from "react";
 
 const imgList = [
   { image: bgimg1, id: 1 },
-  { image: bgimg2, id: 2 },
-  { image: bgimg3, id: 3 },
+  // { image: bgimg2, id: 2 },
+  // { image: bgimg3, id: 3 },
 ];
 
 function Header() {
