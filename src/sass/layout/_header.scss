@@ -1,0 +1,91 @@
+.header {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+  padding-left: 10rem;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+    left: 0;
+    width: 100%;
+    height: 6rem;
+    background-image: linear-gradient(to top, #d6d6d6, #dadada, transparent);
+  }
+  &_btns {
+    display: flex;
+    gap: $primary-gutter;
+
+    &--btn {
+      background-color: $primary-heading-fc;
+      padding: 0.8rem 1.9rem;
+      border-radius: 0.5rem;
+      transition: $small-transition ease-out;
+      margin-top: 3rem;
+
+      &:hover {
+        background-color: #111;
+        color: $primary-heading-fc;
+        box-shadow: 0 0 0.28rem 0.08rem white;
+      }
+    }
+  }
+  &_btns a {
+    text-decoration: none;
+    font-weight: 600;
+    color: $secondary-heading-fc;
+  }
+  &_wrapper {
+    padding-top: 15%;
+  }
+  &_swipers {
+    border-radius: 100%;
+    padding: 1.4rem;
+    border: 2px solid white;
+    backdrop-filter: blur(0.8px);
+
+    &-btns {
+      display: flex;
+      gap: 2rem;
+      position: absolute;
+      bottom: 10%;
+      right: 4%;
+    }
+
+    &--rbtn {
+      // padding: 4rem;
+      & img {
+        height: 6rem;
+      }
+    }
+    &--lbtn {
+      // padding: 4rem;
+      & img {
+        height: 6rem;
+      }
+    }
+  }
+}
+
+.headeBgImgani {
+  animation-name: demo;
+  animation-duration: 1000ms;
+}
+
+@keyframes demo {
+  0% {
+    // opacity: 0;
+    filter: blur(6px);
+    // filter:brightness(90%);
+    // background-image: linear-gradient(black , black);
+  }
+  100% {
+    // opacity: 1;
+    filter: blur(0px);
+    // filter:brightness(0);
+    // background-image: linear-gradient(transparent , transparent);
+  }
+}

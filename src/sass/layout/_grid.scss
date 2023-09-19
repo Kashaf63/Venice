@@ -1,0 +1,21 @@
+.grid {
+  display: grid;
+  // display: none;
+  &_2col {
+    grid-template-columns: 1fr 1.3fr;
+  }
+  &_3col {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  &_gallery {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  &__list {
+    grid-template-columns: 10fr 90fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  &__footer {
+    grid-template-columns: 1fr 1fr 1fr 2.5fr;
+  }
+}

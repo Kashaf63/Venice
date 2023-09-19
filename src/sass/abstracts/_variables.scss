@@ -1,0 +1,53 @@
+// FONT FAMILY
+$primary-font-family: "Urbanist", sans-serif;
+$secondary-font-family: "Poiret One", cursive;
+
+// FONT WEIGHT
+$light-font-weight: 400;
+$regular-font-weight: 500;
+$semi-bold-font-weight: 700;
+$bold-font-weight: 900;
+
+//FONT-SIZE
+$primary-heading-fs: 14rem;
+$tertiary-heading-fs: 2.4rem;
+$list-heading-fs: 2.8rem;
+$pragraph-fs: 1.8rem;
+$pragraph-small-fs: 1.6rem;
+$secondary-pragraph-fs: 2.4rem;
+$secondary-heading-fs: 6.6rem;
+$medium-paragraph-fs: 1.9rem;
+$primary-gutter: 2rem;
+$secondary-gutter: 4rem;
+// $gutter:4rem;
+
+//FONT-COLOR
+$primary-heading-fc: hsl(0, 0%, 100%);
+$secondary-heading-fc: #242424;
+$paragraph-fc: #3a3a3a;
+//GRADIANTS
+$section3-gradiant: linear-gradient(#ededed, #f4f4f4);
+$header-gradiant: linear-gradient(
+    to right bottom,
+    hsla(0, 0%, 0%, 0),
+    hsla(0, 0%, 0%, 0.521)
+  ),
+  url(../image/john-lee-oMneOBYhJxY-unsplash.jpg);
+$text-gradint: -webkit-linear-gradient(
+  270deg,
+  hsl(0, 0%, 100%),
+  hsla(0, 0%, 100%, 0.855),
+  hsla(0, 0%, 20%, 0.164)
+);
+$gallery-img-gradiant: linear-gradient(rgba(0, 0, 0, 0) 40%, black);
+$darken-gradiant: linear-gradient(rgba(0, 0, 0, 0.445), black);
+//COLORS
+$hamburger-btn-bgc: hsl(0, 0%, 93%);
+$section-bgc: hsl(0, 0%, 84%);
+$light-gray: hsl(0, 0%, 93%);
+//TRANSITIONS
+$small-transition: 400ms;
+$medium-transition: 600ms;
+
+//BOX-SHADOWS
+$primary-box-shadow: 0.5rem 0.7rem 0.8rem 0rem rgba(0, 0, 0, 0.233);

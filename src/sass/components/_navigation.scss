@@ -1,0 +1,44 @@
+.hamburger {
+  position: fixed;
+  top: 6%;
+  right: 2.6%;
+  height: 8rem;
+  border-radius: 100%;
+  aspect-ratio: 1;
+  background-color: $hamburger-btn-bgc;
+  overflow: hidden;
+  transition: 1000ms;
+  box-shadow: $primary-box-shadow;
+  z-index: 999;
+
+  &_dash {
+    display: inline-block;
+    width: 65%;
+    height: 0.2rem;
+    background-color: black;
+    transition: $small-transition;
+
+    &--1 {
+      transform: translateX(0.5rem);
+    }
+    &--3 {
+      transform: translateX(-0.5rem);
+    }
+  }
+
+  &:hover &_dash--1 {
+    // display: none;
+    transform: translateX(0rem);
+    width: 70%;
+  }
+
+  &:hover &_dash--2 {
+    // display: none;
+    width: 70%;
+  }
+
+  &:hover &_dash--3 {
+    transform: translateX(0rem);
+    width: 70%;
+  }
+}
