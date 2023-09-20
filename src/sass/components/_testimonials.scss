@@ -1,6 +1,5 @@
 .testimonials {
   max-width: 150rem;
-  // background-color: aqua;
   margin: 0 auto;
   margin-top: 12rem;
   display: flex;
@@ -12,6 +11,15 @@
   display: grid;
   grid-template-columns: 0.01fr 1fr 1fr 0.01fr;
   transition: 1000ms;
+
+  @include responsive(phone) {
+    grid-template-columns: repeat(1 , 1fr);
+    justify-items: center;
+    margin-top: 4rem;
+  }
+  @include responsive(small-phone) {
+    padding: 2rem;
+  }
 
   &_swiper-icon {
     width: 20rem;

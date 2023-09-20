@@ -86,7 +86,9 @@ select {
 }
 body {
   margin: 2rem;
-  //   margin-bottom: 0;
+  @include responsive(big-tab) {
+  margin: 0;
+  }
 }
 
 html {
@@ -113,10 +115,27 @@ html::-webkit-scrollbar-button{
   position: absolute;
   top: 4%;
   left: 2%;
+
+  @include responsive (big-tab) {
+    top: 7%;
+    left: 3%;
+  }
+  @include responsive (small-tab) {
+    top: 6%;
+  }
+  @include responsive(phone) {
+    height: 6rem;
+    top: 3%;
+  }
 }
 .footer_logo {
   height: $hamburger_manu-height;
   margin: 0 auto;
+
+  @include responsive(phone) {
+    margin-top: 3.5rem;
+  }
+  
 }
 html {
   @include responsive(big-tab) {
@@ -127,5 +146,8 @@ html {
   }
   @include responsive(big-desktop) {
     font-size: 75%;
+  }
+  @include responsive(phone) {
+    overflow-x:hidden;
   }
 }

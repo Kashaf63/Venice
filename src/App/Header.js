@@ -44,7 +44,7 @@ function Header() {
         <p className="header-paragraph">
           Discover a world of quick, easy, and exciting travel experiences with
           Venice, <br />
-          where your wanderlust can be transformed into memorable journeys.
+          {/* where your wanderlust can be transformed into memorable journeys. */}
         </p>
         <div className="header_btns">
           <a href="#booking" className="header_btns--btn header-paragraph">

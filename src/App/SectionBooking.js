@@ -31,7 +31,7 @@ const cardListData = [
 
 export default function SectionBooking() {
   return (
-    <section className="section-booking" id={"booking"}>
+    <section className="section-booking   u-sec-padd-block" id={"booking"}>
       <h2 className="heading-secondary">Discover your perfect journey</h2>
       <p className="paragraph-medium">
         From thrilling expeditions to cultural escapades, find your ideal
@@ -77,7 +77,7 @@ function Card({ title, price, secondTitle, li1, li2, li3, button, id }) {
           <li className="card__ul--li">{li2}</li>
           <li className="card__ul--li">{li3}</li>
         </ul>
-        <button className="card__button">{button}</button>
+        <button className="card__button" aria-label="book">{button}</button>
       </div>
     </div>
   );

@@ -17,11 +17,14 @@
   &1 {
     background-image: $gallery-img-gradiant, url(../image/card-img1.webp);
     background-size: cover;
-    background-position: .01rem;
+    background-position: 0.01rem;
+
+    @include responsive (small-phone){
+      background-image: $darken-gradiant, url(../image/card-img1.webp);
+    }
 
     &:hover {
-      background-image: $darken-gradiant,
-        url(../image/card-img1.webp);
+      background-image: $darken-gradiant, url(../image/card-img1.webp);
     }
   }
 
@@ -29,19 +32,24 @@
     background-image: $gallery-img-gradiant, url(../image/card-img2.webp);
     background-size: cover;
 
+    @include responsive (small-phone){
+      background-image: $darken-gradiant, url(../image/card-img2.webp);
+    }
+
     &:hover {
       background-image: $darken-gradiant, url(../image/card-img2.webp);
     }
   }
 
   &3 {
-    background-image: $gallery-img-gradiant, url(../image/card-img3.webp);
+    background-image: $gallery-img-gradiant, url(../image/card-img4.webp);
     background-size: cover;
-    
+    @include responsive (small-phone){
+      background-image: $darken-gradiant, url(../image/card-img4.webp);
+    }
 
     &:hover {
-      background-image: $darken-gradiant,
-        url(../image/card-img3.webp);
+      background-image: $darken-gradiant, url(../image/card-img4.webp);
     }
   }
 
@@ -123,6 +131,14 @@
 
   &__helper {
     transform: translateY(50rem);
+
+    @include responsive (small-phone){
+      transform: translateY(0rem);
+    }
+    @include responsive (small-phone){
+      padding: 4rem;
+    }
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -134,4 +150,6 @@
 }
 .card:hover .card__helper {
   transform: translateY(0);
+  
+
 }

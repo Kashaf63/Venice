@@ -10,6 +10,12 @@
   transition: 1000ms;
   box-shadow: $primary-box-shadow;
   z-index: 999;
+  perspective: 1500rem;
+
+  @include responsive(phone) {
+    height: 7rem;
+    top: 2%;
+  }
 
   &_dash {
     display: inline-block;
@@ -27,16 +33,15 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50% , -50%) rotate(-45deg);
+        transform: translate(-50%, -50%) rotate(-45deg);
       }
     }
     &--2 {
-        opacity: 1;
-        
-        &.clicked {
-            opacity: 0;
-            
-        }
+      opacity: 1;
+
+      &.clicked {
+        opacity: 0;
+      }
     }
     &--3 {
       transform: translateX(-0.5rem);
@@ -47,26 +52,15 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50% , -50%) rotate(45deg);
+        transform: translate(-50%, -50%) rotate(45deg);
       }
     }
   }
 
-//   &:hover &_dash--1 {
-//     // display: none;
-//     transform: translateX(0rem);
-//     width: 70%;
-//   }
-
-//   &:hover &_dash--2 {
-//     // display: none;
-//     width: 70%;
-//   }
-
-//   &:hover &_dash--3 {
-//     transform: translateX(0rem);
-//     width: 70%;
-//   }
+  &:hover {
+    transform: skewX(-9deg) scale(1.1);
+    box-shadow: 0 0.8rem 1.2rem rgba(0, 0, 0, 0.705);
+  }
 }
 
 .header_navigation {
@@ -78,7 +72,7 @@
   width: fit-content;
   z-index: 100;
   transition: 500;
-  transform: translateX(-130rem);
+  transform: translateX(-150rem);
   transition: 500ms;
 
   &.clicked {
@@ -96,12 +90,17 @@
       rgb(121, 120, 120) 0%,
       #eee 80%
     );
-    transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1),-webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+    transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1),
+      -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
     z-index: 99;
     border-radius: 100%;
-
+    @include responsive(phone) {
+      height: 7rem;
+      top: 2%;
+    }
+    
     &.clicked {
-      transform: scale(60);
+      transform: scale(70);
     }
   }
 

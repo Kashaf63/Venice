@@ -23,7 +23,7 @@ const serviceListData = [
 
 function SectionSurvieces() {
   return (
-    <section className="section-servieces u-padding-bottom" id="service">
+    <section className="section-servieces   u-sec-padd-block" id="service">
       <h2 className="heading-secondary u-padding-top-huge">
         What Service We Provide
       </h2>

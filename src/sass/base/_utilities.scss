@@ -1,18 +1,18 @@
-.u-padding-top-huge {
-    padding-top: 20rem;
-}
+// .u-padding-top-huge {
+//     padding-top: 20rem;
+// }
 .u-margin-top {
     margin-top: 12em;
 }
-.u-padding-top {
-    padding-block: 20rem;
-}
+// .u-padding-top {
+//     padding-block: 20rem;
+// }
 .u-margin-bottom {
     margin-bottom: 15rem;
 }
-.u-padding-bottom {
-    padding-bottom: 20rem;
-}
+// .u-padding-bottom {
+//     padding-bottom: 20rem;
+// }
 .u-margin-bottom-small {
     margin-bottom: 3rem;
 }
@@ -31,4 +31,17 @@
 }
 .u-helper-grid {
     grid-column: 2;
+}
+.u-sec-padd-block {
+    padding-block: 20rem;
+
+    @include responsive(big-tab) {
+        padding-block: 15rem;
+    }
+    @include responsive(phone) {
+        padding-block: 9rem;
+    }
+    @include responsive(small-phone) {
+        padding-block: 7rem;
+    }
 }

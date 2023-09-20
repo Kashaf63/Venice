@@ -91,7 +91,10 @@ export default function SectionTestimonials() {
   };
 
   return (
-    <section className="section-testimonials" id="testimonial">
+    <section
+      className="section-testimonials   u-sec-padd-block"
+      id="testimonial"
+    >
       <h2 className="heading-secondary">We make people genuinely happy </h2>
       <p className="paragraph-medium">
         Don't just take our word for it. Hear directly from travelers who have
@@ -101,6 +104,7 @@ export default function SectionTestimonials() {
         <button
           className="testimonials__testimonial--btn"
           onClick={handleMinus}
+          aria-label="Swiper"
         >
           <img src={leftarr} alt="left-arr" />
         </button>
@@ -117,7 +121,11 @@ export default function SectionTestimonials() {
             />
           );
         })}
-        <button className="testimonials__testimonial--btn" onClick={handlePlus}>
+        <button
+          className="testimonials__testimonial--btn"
+          onClick={handlePlus}
+          aria-label="Swiper"
+        >
           <img src={rightarr} alt="right-arr" />
         </button>
       </div>
@@ -126,14 +134,17 @@ export default function SectionTestimonials() {
         <button
           className={curr === 1 ? "dots_dot dots_dot--clicked" : "dots_dot"}
           onClick={handledot1}
+          aria-label="dot"
         ></button>
         <button
           className={curr === 2 ? "dots_dot dots_dot--clicked" : "dots_dot"}
           onClick={handledot2}
+          aria-label="dot"
         ></button>
         <button
           className={curr === 3 ? "dots_dot dots_dot--clicked" : "dots_dot"}
           onClick={handledot3}
+          aria-label="dot"
         ></button>
       </div>
     </section>

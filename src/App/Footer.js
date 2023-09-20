@@ -76,7 +76,7 @@ function Newslatter() {
           className="footer_from-input"
           placeholder="Please write your email"
         />
-        <button className="footer_from-inputBtn">Submit</button>
+        <button className="footer_from-inputBtn" aria-label="submit">Submit</button>
       </form>
       <div className="footer_social-mediaLinks">
         <a href="#">
@@ -102,24 +102,36 @@ function FooterNav({ title, link1, link2, link3, link4, link5, link6 }) {
       <nav className="footer__nav footer__nav--1">
         <p className="footer__nav--heading">{title}</p>
         <ul className="footer__nav--links">
-          <a href="#" className="footer__nav--link">
-            <li>{link1}</li>
-          </a>
-          <a href="#" className="footer__nav--link">
-            <li>{link2}</li>
-          </a>
-          <a href="#" className="footer__nav--link">
-            <li>{link3}</li>
-          </a>
-          <a href="#" className="footer__nav--link">
-            <li>{link4}</li>
-          </a>
-          <a href="#" className="footer__nav--link">
-            <li>{link5}</li>
-          </a>
-          <a href="#" className="footer__nav--link">
-            <li>{link6}</li>
-          </a>
+          <li>
+            <a href="#" className="footer__nav--link">
+              {link1}
+            </a>
+          </li>
+          <li>
+            <a href="#" className="footer__nav--link">
+              {link2}
+            </a>
+          </li>
+          <li>
+            <a href="#" className="footer__nav--link">
+              {link3}
+            </a>
+          </li>
+          <li>
+            <a href="#" className="footer__nav--link">
+              {link4}
+            </a>
+          </li>
+          <li>
+            <a href="#" className="footer__nav--link">
+              {link5}
+            </a>
+          </li>
+          <li>
+            <a href="#" className="footer__nav--link">
+              {link6}
+            </a>
+          </li>
         </ul>
       </nav>
     </>

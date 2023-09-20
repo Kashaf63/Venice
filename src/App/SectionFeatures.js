@@ -46,7 +46,7 @@ const featuresListData = [
 
 function SectionFeatures() {
   return (
-    <section className="section-features" id="feature">
+    <section className="section-features   u-sec-padd-block" id="feature">
       <h2 className="heading-secondary feature_heading ">Our Features</h2>
       <p className="paragraph-medium" >We believe in making travel accessible and exciting.Out unique approach to planning and experiencing trips ensures that you have a nice journey</p>
       <FeaturesList />

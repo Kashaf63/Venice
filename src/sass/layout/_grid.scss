@@ -3,13 +3,52 @@
   // display: none;
   &_2col {
     grid-template-columns: 1fr 1.3fr;
+
+    @include responsive(phone) {
+      grid-template-columns: 1fr;
+      gap: 8rem;
+    }
+    @include responsive(phone) {
+      gap: 1rem;
+      margin-block: 4rem;
+    }
   }
   &_3col {
     grid-template-columns: repeat(3, 1fr);
+
+    @include responsive(big-tab) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @include responsive (small-tab) {
+      grid-template-columns: 1fr;
+      gap: 4rem;
+      margin-inline: 22vw;
+    }
+    @include responsive(phone) {
+      grid-template-columns: 1fr;
+      gap: 4rem;
+      margin-inline: 10rem;
+    }
+    @include responsive(medium-phone) {
+      margin-inline: 2rem;
+    }
   }
   &_gallery {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 1fr);
+
+    @include responsive(big-tab) {
+      margin-inline: 2rem;
+    }
+
+    @include responsive(phone) {
+      display: flex;
+      flex-direction: column;
+      height: 132vh;
+    }
+    @include responsive(medium-phone) {
+      margin-block: 4rem;
+    }
   }
   &__list {
     grid-template-columns: 10fr 90fr;
@@ -17,5 +56,18 @@
   }
   &__footer {
     grid-template-columns: 1fr 1fr 1fr 2.5fr;
+
+    @include responsive(big-tab) {
+      grid-template-columns: 1fr 1fr 1fr;
+      margin: 0 5rem;
+      row-gap: 4rem;
+    }
+    @include responsive(phone) {
+      row-gap: 0;
+    }
+    @include responsive(medium-phone) {
+      margin: 0 1.5rem;
+      row-gap: 3rem;
+    }
   }
 }

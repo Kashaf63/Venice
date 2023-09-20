@@ -1,6 +1,7 @@
 // It where section will be styled
 .section-servieces {
   background-color: $section-bgc;
+
   &_grid {
     max-width: 150rem;
     min-height: fit-content;
@@ -10,8 +11,26 @@
     position: relative;
     gap: 10rem;
 
+    @include responsive(big-tab) {
+      gap: 2rem;
+      margin-inline: 2rem;
+    }
+
     // display: none;
     &--1col {
+      @include responsive(phone) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    &--2col {
+      @include responsive(phone) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
     }
     & img {
       border-radius: 0.5rem;
@@ -33,11 +52,22 @@
     &_img1 {
       width: 100%;
       // display: none;
+      @include responsive(phone) {
+        width: 70%;
+      }
     }
     &_img2 {
       height: 100%;
       // object-fit: cover;
       transform: translateY(-12%);
+
+      @include responsive(small-tab) {
+        object-fit: cover;
+      }
+
+      @include responsive(phone) {
+        height: 40%;
+      }
 
       &:hover {
         z-index: 5;
@@ -53,6 +83,15 @@
       right: 17%;
       width: 25%;
       z-index: 1;
+
+      @include responsive(phone) {
+        position: static;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 80%;
+        top: 0;
+      }
     }
   }
 
@@ -70,6 +109,11 @@
       padding: 6rem 4rem;
       border-top: 1px solid $secondary-heading-fc;
 
+      @include responsive(medium-phone) {
+        flex-direction: column;
+        text-align: center;
+      }
+
       &:last-child {
         border-bottom: 1px solid $secondary-heading-fc;
       }
@@ -84,13 +128,16 @@
 .section-features {
   background-image: linear-gradient($section-bgc, $light-gray);
   min-height: 100vh;
-  padding-block: 15rem;
 
   &_wrapper {
     max-width: 130rem;
     margin: 0 auto;
     gap: $primary-gutter;
     margin-top: 12rem;
+
+    @include responsive(big-tab) {
+      margin-inline: 6rem;
+    }
 
     &--list {
       padding: 4rem;
@@ -106,8 +153,15 @@
         #ebebeb 0%,
         rgba(255, 255, 255, 0.925) 100%
       );
-      // box-shadow: 0.5rem 0.7rem 0.8rem 0rem rgba(0, 0, 0, 0.233);
       transition: $medium-transition;
+
+      @include responsive(phone) {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 3rem;
+        padding-inline: 6rem;
+      }
 
       &:hover,
       &:focus {
@@ -162,6 +216,10 @@
       &1 {
         grid-column: 1/3;
         background-image: $gallery-img-gradiant, url(../image/gallery-img1.webp);
+
+        @include responsive(phone) {
+          // grid-row: 1/-1;
+        }
       }
 
       &2 {
@@ -182,7 +240,6 @@
 }
 .section-howItWorks {
   background-image: linear-gradient(#f3f3f3, #f7f7f7);
-  padding-block: 20rem;
 
   &__icon {
     height: 7rem;
@@ -196,14 +253,30 @@
     max-width: 137rem;
     margin: 0 auto;
     gap: $secondary-gutter;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @include responsive(big-tab) {
+      display: flex;
+      flex-direction: column-reverse;
+      margin-inline: 4rem;
+    }
   }
 
   &__List {
     display: flex;
     flex-direction: column;
     gap: $primary-gutter;
+
+    @include responsive(big-tab) {
+      margin-top: 8rem;
+    }
+    @include responsive(medium-phone) {
+      margin-top: 4rem;
+    }
   }
   &__ListItems {
+    display: grid;
     align-items: center;
     justify-items: start;
     gap: 1.5rem;
@@ -213,6 +286,16 @@
     position: relative;
     overflow: hidden;
     padding-bottom: 2.5rem;
+
+    @include responsive(small-phone) {
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      padding-inline: 2.4rem;
+      text-align: center;
+      padding-block: 6rem;
+      border-radius: .5rem;
+    } 
 
     &::after {
       content: "";
@@ -234,12 +317,21 @@
   &__grid-2col {
     padding: 4rem;
     padding-block: 0rem;
+
+    @include responsive(big-tab) {
+      padding: 0;
+    }
   }
 
   &__grid-1col {
     position: relative;
     overflow: hidden;
     border-radius: 0.5rem;
+    margin-right: 3.6rem;
+
+    @include responsive(big-tab) {
+      margin: 0 auto;
+    }
 
     &--img {
       height: 100%;
@@ -248,6 +340,17 @@
       filter: grayscale(1);
       background-image: $section3-gradiant;
       transition: $small-transition;
+
+      @include responsive(big-tab) {
+        max-width: 50%;
+        filter: brightness(100%);
+        filter: grayscale(0);
+        margin: 0 auto;
+      }
+
+      @include responsive(phone) {
+        max-width: 85%;
+      }
 
       &:hover {
         // display: none;
@@ -258,7 +361,6 @@
   }
 }
 .section-booking {
-  padding-block: 20rem;
   background-color: hsl(0, 0%, 97%);
 
   &__grid {
@@ -268,9 +370,11 @@
     margin: 1rem auto;
     margin-top: 12rem;
     // gap: 2rem;
+    @include responsive(big-tab) {
+      margin-inline: 2rem;
+    }
   }
 }
 .section-testimonials {
   background-color: hsl(0, 0%, 97%);
-  padding-block: 20rem;
 }

@@ -10,7 +10,7 @@ function Navigation() {
   };
   return (
     <>
-      <button className="hamburger" onClick={handleClick}>
+      <button className="hamburger" onClick={handleClick} aria-label="hamburger-manu">
         <span
           className={
             clicked

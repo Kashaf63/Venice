@@ -1,8 +1,40 @@
 @mixin absoluteCentering() {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% , -50%);
-  }
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
+@mixin responsive($breakpoint) {
+  @if $breakpoint == small-phone {
+    @media (max-width: 27.8125em) {
+      @content;
+    }
+  }
+  @if $breakpoint == medium-phone {
+    @media (max-width:31.875em) {
+      @content
+    }
+  }
   
+  @if $breakpoint == phone {
+    @media (max-width: 37.5em) {
+      @content;
+    }
+  }
+  @if $breakpoint == small-tab {
+    @media (max-width: 56.25em) {
+      @content;
+    }
+  }
+  @if $breakpoint == big-tab {
+    @media (max-width: 75em) {
+      @content;
+    }
+  }
+  @if $breakpoint == small-desktop {
+    @media (max-width: 112.5em) {
+      @content;
+    }
+  }
+}

@@ -19,7 +19,7 @@ const galleryListData = [
 
 function SectionLocation() {
   return (
-    <section className="section-location u-padding-top" id="location">
+    <section className="section-location   u-sec-padd-block" id="location">
       <h2 className="heading-secondary "> Best Locations</h2>
       <p className="paragraph-medium">
         Extraordinary natural beauty, enjoy the rich culture, and experience the

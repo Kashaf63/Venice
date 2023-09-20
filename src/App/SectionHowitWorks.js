@@ -10,7 +10,7 @@ const howitworkListData = [
     icon: search,
     title: "Find you destination",
     description:
-      "Embark on a jouney to discover your dream destination, where adventure and relaxation await",
+      "Embark on a jouney to enjoy the life and to discover your dream destination, where adventure and relaxation is awaiting for you",
   },
 
   {
@@ -37,8 +37,8 @@ const howitworkListData = [
 
 function SectionHowItWorks() {
   return (
-    <section className="section-howItWorks" id="howItWorks">
-      <div className="grid grid_2col section-howItWorks__grid">
+    <section className="section-howItWorks   u-sec-padd-block" id="howItWorks">
+      <div className="section-howItWorks__grid">
         <div className="section-howItWorks__grid-1col">
           <img
           className="section-howItWorks__grid-1col--img"
@@ -90,8 +90,8 @@ function SectionHowItWorksListItems({ title, description, icon }) {
     <li
       className={
         listhover
-          ? "grid section-howItWorks__ListItems active"
-          : "grid section-howItWorks__ListItems"
+          ? "section-howItWorks__ListItems active"
+          : "section-howItWorks__ListItems"
       }
       onMouseEnter={handleListhover}
       onMouseLeave={handleListunhover}
